@@ -1,0 +1,125 @@
+/* Ustawienia bazowe */
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+    scroll-behavior: smooth; /* P³ynne przewijanie */
+    background-color: #f9f9f9; /* Jasne t³o dla ca³ej strony */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;  Kolor tekstu 
+    background-color: #fff;  Bia³e t³o dla treœci 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  Lekki cieñ dla treœci 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  Ustawienie minimalnej wysokoœci 
+}
+
+/* Stylizacja przycisków i elementów formularza */
+/*.btn, .btn-link.nav-link, .form-control, .form-check-input {
+    border-radius: 0.25rem;
+    transition: box-shadow 0.3s ease-in-out;*/ /* P³ynne przejœcie dla cieni */
+/*}
+
+    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    }*/
+
+/* Stylizacja nag³ówków i tekstu */
+/*h1, h2, h3, h4, h5, h6 {
+    color: #258cfb;*/ /* Kolor nag³ówków */
+    /*margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 0 0 1rem 0;
+}*/
+
+/* Flexbox dla lepszego uk³adu */
+/*.container {
+    flex: 1;*/ /* Pozwól kontenerowi wype³niæ pozosta³¹ przestrzeñ */
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-height: 80vh;*/ /* Ograniczenie wysokoœci kontenera */
+/*}*/
+
+/* Stylizacja formularza */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Maksymalna szerokoœæ formularza */
+    margin: auto; /* Wyœrodkowanie formularza */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    form .form-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+        form .form-group label {
+            flex: 1;
+            min-width: 120px; /* Minimalna szerokoœæ etykiety */
+            margin-right: 10px;
+            font-weight: bold;
+            text-align: right; /* Wyrównanie tekstu do prawej */
+        }
+
+        form .form-group input, form .form-group select {
+            flex: 2;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+            form .form-group input:focus, form .form-group select:focus {
+                border-color: #258cfb;
+                box-shadow: 0 0 5px rgba(37, 140, 251, 0.5);
+            }
+
+    form button {
+        align-self: flex-end;
+        padding: 10px 20px;
+        background-color: #258cfb;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        form button:hover {
+            background-color: #1a5c9b;
+        }
+
+    form a {
+        align-self: flex-start;
+        margin-top: 10px;
+        color: #258cfb;
+        text-decoration: none;
+    }
+
+        form a:hover {
+            text-decoration: underline;
+        }
